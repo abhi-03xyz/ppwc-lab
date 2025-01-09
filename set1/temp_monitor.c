@@ -1,16 +1,12 @@
 // temperature_monitor.c
 #include <stdio.h>
 #include <stdlib.h>
-
 #define CRITICAL_THRESHOLD 23.0 // in Fahrenheit
 #define MAX_SAFE_TEMPERATURE 50.0 // in Fahrenheit
-
-// Function to convert Celsius to Fahrenheit
 double celsius_to_fahrenheit(double celsius) {
     return (celsius * 9.0 / 5.0) + 32.0;
 }
 
-// Function to display the results in a tabular format
 void display_results(double celsius, double fahrenheit, const char *status) {
     printf("%10.2lf | %10.2lf | %-6s\n", celsius, fahrenheit, status);
 }
